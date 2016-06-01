@@ -1,0 +1,51 @@
+extends layout.jade
+
+block content
+  .container-fluid
+    .col-md-1
+    .col-md-10
+      h3 Event title
+      img.img-responsive(src="http://placehold.it/1050x700")
+    .col-md-1
+  .container-fluid
+    ul.nav.nav-tabs
+      li(role='presentation')
+        a(href='#about', role="tab", data-toggle="tab") About this event
+      li.active(role='presentation')
+        a(href='#register', role="tab", data-toggle="tab") Register
+      li(role='presentation')
+        a(href='#updates', role="tab", data-toggle="tab") Updates
+      li(role='presentation')
+        a(href='#gallery', role="tab", data-toggle="tab") Gallery
+
+    .tab-content
+      .tab-pane#about(role="tabpanel")
+        h4 Description
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan ornare sagittis. Integer scelerisque ante quis tellus lacinia porta. Nam imperdiet risus at mi faucibus luctus. Praesent tortor arcu, aliquet quis semper eget, posuere a nibh. Duis quis quam lacus. Morbi consequat tellus eget pharetra euismod. 
+
+        table.table
+          tr
+            td Date
+            td Date
+          tr
+            td Time
+            td Time
+          tr
+            td Venue
+            td Venue
+
+      .tab-pane.active#register(role="tabpanel")
+        h4 Register now!!!
+        iframe(src='https://docs.google.com/forms/d/1aHRztyJWb6tBtVb9Z4zYMRX4FrsLBJKFdPBwzNWVsbk/viewform?embedded=true', width='760', height='500', frameborder='0', marginheight='0', marginwidth='0') Loading...
+
+      .tab-pane.active#updates(role="tabpanel")
+        .panel
+          h6 Announcement 1
+        .panel
+          h6 Announcement 1
+        .panel
+          h6 Announcement 1
+
+
+      .tab-pane.active#gallery(role="tabpanel")
+        h4 We are building... Exciting images are on the way.

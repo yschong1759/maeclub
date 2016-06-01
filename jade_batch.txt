@@ -1,0 +1,1 @@
+jade -w -P D://Github/maeclub/jade/ -o D://Github/maeclub
