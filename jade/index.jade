@@ -18,7 +18,7 @@ block content
     .col-md-5
       p.text-justify
         | Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pretium orci nec libero accumsan, nec gravida nisi viverra. Cras porttitor non felis et fringilla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce pretium molestie nibh vestibulum lacinia. Phasellus id nibh eu orci mollis porta. Integer tempor eros elit, eu sagittis magna efficitur a. Suspendisse at lobortis libero. Maecenas sed orci fermentum, finibus enim sit amet, aliquam ipsum. Maecenas efficitur gravida lorem in tempus. Vivamus mattis, velit ac mattis ultrices, nunc magna placerat magna, vel laoreet arcu quam faucibus nisl. 
-      button.btn.btn-primary See current committee >>>
+      button.btn.btn-primary(onclick="location.href = 'committee.html'") See current committee >>>
     .col-md-2
 
   .container-fluid
@@ -40,12 +40,18 @@ block content
 
   .container-fluid
     h2.text-center Latest News
-    .panel.panel-info.announcements.center-block
-      p Announcement 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tortor turpis, vestibulum vitae sodales in, vulputate non dolor. Curabitur sit amet mauris tortor. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-      img(src="http://placehold.it/100x100")
-    .panel.panel-info.announcements.center-block
-      p Announcement 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tortor turpis, vestibulum vitae sodales in, vulputate non dolor. Curabitur sit amet mauris tortor. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-      img(src="http://placehold.it/100x100")
-    .panel.panel-info.announcements.center-block
-      p Announcement 3: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tortor turpis, vestibulum vitae sodales in, vulputate non dolor. Curabitur sit amet mauris tortor. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-      img(src="http://placehold.it/100x100")
+    .container-fluid.announcements.center-block
+      .col-md-4
+        img.img-rounded.img-responsive.center-block(src="http://placehold.it/100x100")
+      .col-md-8
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tortor turpis, vestibulum vitae sodales in, vulputate non dolor. Curabitur sit amet mauris tortor. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+    .container-fluid.announcements.center-block
+      .col-md-4
+        img.img-rounded.img-responsive.center-block(src="http://placehold.it/100x100")
+      .col-md-8
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tortor turpis, vestibulum vitae sodales in, vulputate non dolor. Curabitur sit amet mauris tortor. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+    .container-fluid.announcements.center-block
+      .col-md-4
+        img.img-rounded.img-responsive.center-block(src="http://placehold.it/100x100")
+      .col-md-8
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tortor turpis, vestibulum vitae sodales in, vulputate non dolor. Curabitur sit amet mauris tortor. Interdum et malesuada fames ac ante ipsum primis in faucibus.

@@ -1,11 +1,18 @@
 body {
-    padding-top: 80px;
+    padding-top: 70px;
+}
+.zero-margin {
+  margin: 0px;
+}
+.zero-padding {
+  padding: 0px;
 }
 #footer {
     border-top: 3px solid #d3d3d3;
     margin-top: 10px;
     padding-top: 10px;
     background: #f3f3f3;
+    min-height: 100px;
 }
 .connect-us-logo {
     padding: 2px;
@@ -27,39 +34,53 @@ body {
 .events-container {
   margin: 0px 10%;
 }
-.first-event-pill, .event-pill {
-  margin: 1% 0px;
+.first-event-pill {
+  padding: 2px 2px;
+}
+.event-pill {
+  padding: 2px 1px;
+}
+/* event page */
+.event-details-tab-container {
+  margin: 20px 10%;
+}
+.date-time-venue-table {
+  width: 50%;
+  margin: auto;
+}
+.date-time-venue-table-left {
+  width: 40%;
+  text-align: center;
+}
+.date-time-venue-table-right {
+  width: 60%;
+  text-align: left;
+}
+.event-updates-container {
+  width: 90%;
+  padding: 10px 0px;
+}
+/* publications and merchandize */
+.perpetual-motion-title {
+  vertical-align: middle;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.publications-row, .merchandize-row {
+  padding: 10px 0px;
+}
+.publications-pill, .merchandize-pill {
+  padding: 5px;
+}
+
+/* committee */
+.committee-list {
+  width: 200px;
+}
+.committee-height-control {
+  height: 500px;
   overflow: hidden;
 }
-.first-event-pill img {
-  height: 415px;
-  max-height: 415px;
-}
-.event-pill img {
-  height: 200px;
-  max-height: 200px;
-}
-.overlay {
-  position: absolute;
-  bottom: 8%;
-  width: 75%;
-  height: 25%;
-  border-radius: 3px;
-  background-color: #000000;
-  color: #ffffff;
-  padding: 5px;
-  opacity: 0.6;
-  filter: alpha(opacity=60);
-}
-@media (max-width: 992px) {
-  .events-container {
-    margin: 0px;
-  }
-  .first-event-pill, .event-pill {
-    margin: 5% 0px;
-  }
-  .first-event-pill img {
-    height: 200px;
-    max-height: 200px;
-  }
+.view-message-button-row {
+  padding: 10px;
 }
